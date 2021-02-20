@@ -1,5 +1,5 @@
 [package]
-name = "rpi-learning"
+name = "rpi-gpio-samples"
 version = "0.1.0"
 authors = ["Nataraj Basappa <n5j.b5a@gmail.com>"]
 edition = "2018"
@@ -9,6 +9,10 @@ edition = "2018"
 [[bin]]
 name = "blink"
 path = "src/blink/main.rs"
+
+[[bin]]
+name = "switch"
+path = "src/switch/main.rs"
 
 [dependencies]
 rppal = "0.11.3"

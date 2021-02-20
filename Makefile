@@ -28,5 +28,6 @@ clean:
 # copy the built binary to the target machine
 copy-bin: build
 	scp ./target/armv7-unknown-linux-gnueabihf/release/blink $(RPI_BOX):
+	scp ./target/armv7-unknown-linux-gnueabihf/release/switch $(RPI_BOX):
 
 .PHONY: start-env stop-env build clean
