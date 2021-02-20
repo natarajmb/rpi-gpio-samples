@@ -14,5 +14,9 @@ path = "src/blink/main.rs"
 name = "switch"
 path = "src/switch/main.rs"
 
+[[bin]]
+name = "rgb_led"
+path = "src/rgb_led/main.rs"
+
 [dependencies]
 rppal = "0.11.3"

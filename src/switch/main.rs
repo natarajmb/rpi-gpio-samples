@@ -7,7 +7,7 @@ use rppal::system::DeviceInfo;
 const GPIO_SWITCH: u8 = 17;
 
 fn main() -> Result<(), Box<dyn Error>> {
-    println!("Blinking an LED on a {}", DeviceInfo::new()?.model());
+    println!("Printing a switch state on a {}", DeviceInfo::new()?.model());
 
     let pin = Gpio::new()?.get(GPIO_SWITCH)?.into_input();
 
